@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
+//
 //        int[] array = new int[10];
 //        array[0] = 6;
 //        array[1] = 2;
@@ -40,11 +40,11 @@ public class Arrays {
 //            }
 //        }
 
-//        int[] numbers = {5, 1, 3, 4, 2};
-//        int res = sumOfNumbersInArray(numbers);
-//        System.out.println(res);
-//        int[] array = {5, 1, 3, 4, 2};
-//        printArrayInStars(array);
+        int[] numbers = {5, 1, 3, 4, 2};
+        int res = sumOfNumbersInArray(numbers);
+        System.out.println(res);
+        int[] array = {5, 1, 3, 4, 2};
+        printArrayInStars(array);
 
 //        String[] arrayOfStrings = {"Matti L.", "Matti P.", "Matti V."};
 //        double[] arrayOfFloatingpoints = {1.20, 3.14, 100.0, 0.6666666667};
