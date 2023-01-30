@@ -24,6 +24,9 @@ public class Archives {
             archives.add(archive);
         }
         System.out.println("==Items==");
+        for (Archive archive : archives) {
+            System.out.println(archive.getIdentifier()+": "+archive.getName());
+        }
     }
 }
 
@@ -33,7 +36,7 @@ class Archive{
 
     public Archive(String identifier, String name){
       this.identifier = identifier;
-      this.name = identifier;
+      this.name = name;
     }
 
     public String getIdentifier(){
@@ -42,6 +45,20 @@ class Archive{
 
     public String getName(){
         return this.name;
+    }
+
+    public boolean equals(Object compared){
+        if(this == compared){
+            return true;
+        }
+
+        if(!(compared instanceof Archive)){
+            return false;
+        }
+
+        Archive comparedArchive = (Archive) compared;
+
+        return false;
     }
 
 }
