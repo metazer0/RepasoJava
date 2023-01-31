@@ -21,11 +21,17 @@ public class Archives {
             }
             System.out.println(name);
             Archive archive = new Archive(identifier,name);
-            archives.add(archive);
+            if(archives.contains(archive)){
+                continue;
+            }else{
+                archives.add(archive);
+            }
+
+
         }
         System.out.println("==Items==");
         for (Archive archive : archives) {
-            System.out.println(archive.getIdentifier()+": "+archive.getName());
+            System.out.println(archive.getIdentifier() + ": " + archive.getName());
         }
     }
 }
@@ -58,7 +64,7 @@ class Archive{
 
         Archive comparedArchive = (Archive) compared;
 
-        return false;
+        return this.identifier.equals(comparedArchive.identifier);
     }
 
 }
